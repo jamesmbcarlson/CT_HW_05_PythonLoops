@@ -13,7 +13,7 @@ days_of_the_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 moods_list = ["Happy", "Sad", "Energetic", "Calm", "Livid", "Existential Dread", "Ennui", "Sleepy", "Meh", "Depressy", "Caffeinated"]
 
 for i in range(len(days_of_the_week)):
-    print(f"On {days_of_the_week[i]} I was feeling {moods_list[random.randint(0, len(moods_list) - 1)]}")
+    print(f"On {days_of_the_week[i]} I was feeling {random.choice(moods_list)}")
 
 
 
@@ -23,7 +23,7 @@ print("\n2. Double Scoop with Nested Loops \n")
 times_of_day = ["Morning", "Afternoon", "Evening"]
 for d in range(len(days_of_the_week)):
     for t in range(len(times_of_day)):
-        print(f"On {days_of_the_week[d]} {times_of_day[t]} I was feeling {moods_list[random.randint(0, len(moods_list) - 1)]}")
+        print(f"On {days_of_the_week[d]} {times_of_day[t]} I was feeling {random.choice(moods_list)}")
 
 
 
